@@ -30,3 +30,25 @@
   top: 22px;
   left: 27px;
 }
+
+/* ------------ Media Queries --------------  */
+@media screen and (max-width: 410px) {
+  html {
+    font-size: 14px;
+  }
+
+  .functionalities .searchbar input {
+    padding: 20px 20px 21px 40px;
+  }
+
+  .functionalities .searchbar .searchbar-logo {
+    top: 22px;
+    left: 17px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .poke-data .poke-id {
+    font-size: 0.85rem;
+  }
+}

@@ -81,3 +81,10 @@
   top: 0px;
   right: 0px;
 }
+
+/* ------------ Media Queries --------------  */
+@media screen and (max-width: 410px) {
+  .poke-data .poke-id {
+    font-size: 0.85rem;
+  }
+}
