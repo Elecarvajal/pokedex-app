@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import './PokeCard.css';
+
 export const PokeCard = ({ id, name, img, firstType, secondType }) => {
   const [loaded, setLoaded] = useState('');
 
@@ -32,15 +34,17 @@ export const PokeCard = ({ id, name, img, firstType, secondType }) => {
           )}
         </div>
       </div>
-      <div
-        className="poke-container-image"
-        style={{ backgroundImage: "url('./assets/backgrounds/pokeball.png')" }}
-      >
+      <div className="poke-container-image">
         <img
           src={img}
           alt={name}
-          className={loaded}
+          className={`pokemon ${loaded}`}
           onLoad={() => setLoaded('fade-in')}
+        />
+        <img
+          className="pokeball"
+          src={'./assets/backgrounds/pokeball.png'}
+          alt="pokeball"
         />
       </div>
     </div>

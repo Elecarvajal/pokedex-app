@@ -1,0 +1,46 @@
+.header {
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.header .navbar {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: flex-end;
+}
+
+.header .navbar .nav {
+  display: flex;
+}
+
+.header .navbar .nav .nav-item {
+  cursor: pointer;
+  width: 20px;
+}
+
+.header .navbar .nav .nav-item img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.header .navbar .nav .prev {
+  margin-right: 25px;
+}
+
+.header .title {
+  color: #17171b;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.375rem;
+  margin-bottom: 10px;
+}
+
+.header .description {
+  color: #747476;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1875rem;
+}

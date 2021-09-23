@@ -1,0 +1,32 @@
+.functionalities {
+  margin: 25px 0 45px 0;
+}
+
+.functionalities .searchbar {
+  position: relative;
+}
+
+.functionalities .searchbar input {
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #747476;
+  line-height: 1.1875rem;
+  padding: 20px 20px 21px 55px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.functionalities .searchbar input:focus {
+  outline: none;
+  background-color: #e2e2e2;
+}
+
+.functionalities .searchbar .searchbar-logo {
+  position: absolute;
+  top: 22px;
+  left: 27px;
+}

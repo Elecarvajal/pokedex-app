@@ -1,5 +1,7 @@
-import { Loading } from './Loading';
-import { PokeCard } from './PokeCard';
+import { Loading } from '../Loading';
+import { PokeCard } from '../PokeCard';
+
+import './PokeGrid.css';
 
 export const PokeGrid = ({ pokemons, isLoading }) => {
   if (isLoading)

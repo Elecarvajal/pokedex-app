@@ -1,5 +1,5 @@
 :root {
-  /* Backgrounds Cards */
+  /* Color Backgrounds */
   --bg-type-bug: #8bd674;
   --bg-type-dark: #6f6e78;
   --bg-type-dragon: #7383b9;
@@ -19,7 +19,7 @@
   --bg-type-steel: #4c91b2;
   --bg-type-water: #58abf6;
 
-  /* Backgrounds Types */
+  /* Color Types*/
   --type-bug: #8cb230;
   --type-dark: #58575f;
   --type-dragon: #0f6ac0;
@@ -40,128 +40,7 @@
   --type-water: #4a90da;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  background-color: #ffff;
-  font-family: 'Roboto', sans-serif;
-}
-
-.container {
-  margin: 0px auto 0px auto;
-  max-width: 1000px;
-  width: 80%;
-}
-
-.header {
-  padding-top: 100px;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-
-.header .title {
-  color: #17171b;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.375rem;
-  margin-bottom: 10px;
-}
-
-.header .description {
-  color: #747476;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.1875rem;
-}
-
-.functionalities {
-  margin: 25px 0 45px 0;
-}
-
-.pagination {
-  width: fit-content;
-  margin-left: auto;
-}
-
-.pagination .btn {
-  cursor: pointer;
-  padding: 5px;
-  margin: 0 5px;
-  border: none;
-  background-color: transparent;
-  font-size: 1.5rem;
-  color: #17171b;
-}
-
-.functionalities .searchbar {
-  position: relative;
-}
-
-.functionalities .searchbar input {
-  border: none;
-  border-radius: 10px;
-  background-color: #f2f2f2;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  color: #747476;
-  line-height: 1.1875rem;
-  padding: 20px 20px 21px 55px;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-
-.functionalities .searchbar input:focus {
-  outline: none;
-  background-color: #e2e2e2;
-}
-
-.functionalities .searchbar .searchbar-logo {
-  position: absolute;
-  top: 22px;
-  left: 27px;
-}
-
-.poke-grid {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 992px) {
-  .poke-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .poke-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.poke-card {
-  background-color: #aaacb8;
-  display: flex;
-  flex-direction: row;
-  border: none;
-  border-radius: 10px;
-  /* width: 300px; */
-}
-
-/* ---------- BACKGROUND CARDS ------------ */
-
+/* ---------- Backgrounds for Cards ------------ */
 .bg-bug {
   background-color: var(--bg-type-bug);
   box-shadow: 0px 10px 20px 0px rgba(139, 214, 116, 0.4);
@@ -235,7 +114,7 @@ body {
   box-shadow: 0px 10px 20px 0px rgba(181, 185, 196, 0.4);
 }
 
-/* ---------- BACKGROUND TYPES ------------ */
+/* ---------- Backgrounds for Types ------------ */
 .bug {
   background-color: var(--type-bug);
 }
@@ -291,68 +170,29 @@ body {
   background-color: var(--type-normal);
 }
 
-.poke-data {
-  background-position-x: right;
-  background-position-y: top;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  width: 50%;
+/* -------------- Global Styles ---------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.poke-data .poke-id {
-  color: rgba(23, 23, 27, 0.6);
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 0.875rem;
+html {
+  font-size: 16px;
 }
 
-.poke-data .poke-name {
-  color: #ffff;
-  font-size: 1.625rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.9375rem;
-  margin-bottom: 5px;
-  text-transform: capitalize;
+body {
+  background-color: #ffff;
+  font-family: 'Roboto', sans-serif;
 }
 
-.poke-data .poke-types {
-  display: flex;
-  justify-content: flex-start;
+.container {
+  margin: 0px auto;
+  max-width: 1000px;
+  width: 80.68%;
 }
 
-.type {
-  color: white;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-style: normal;
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 0.875rem;
-  margin-right: 5px;
-  padding: 5px;
-  text-transform: capitalize;
-}
-
-.type-icon {
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-}
-
-.poke-container-image {
-  background-position: right;
-  background-repeat: no-repeat;
-  position: relative;
-  width: 50%;
-}
-
+/* ------------ Animation  ------------- */
 @keyframes fadein {
   from {
     opacity: 0;
@@ -362,18 +202,11 @@ body {
   }
 }
 
-.poke-container-image img {
-  opacity: 0;
-  position: absolute;
-  right: 10px;
-  top: -25px;
-  width: 78.51%;
-}
-
 .fade-in {
   animation: fadein 0.35s ease forwards;
 }
 
+/* ------------ Media Queries --------------  */
 @media screen and (max-width: 410px) {
   html {
     font-size: 14px;
