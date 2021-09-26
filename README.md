@@ -12,3 +12,6 @@
 ### Note
 
 The detailed information of the pokemon is not available.
+
+### Screenshot
+![pokedex-app](https://user-images.githubusercontent.com/43593534/134789198-af2aaf06-9e0f-4afe-87b7-876a7092724d.png)
